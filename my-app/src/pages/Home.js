@@ -6,8 +6,6 @@ import pp from "../images/pp.png";
 import p4 from "../images/4.png";
 import ppp from "../images/ppp.png";
 import p5 from "../images/5.png";
-import ff from "../images/ff.png";
-import p8 from "../images/8.png";
 import Invite from "../components/Invite";
 
 const Home = () => {
@@ -20,7 +18,7 @@ const Home = () => {
 
   const getData = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/api/v1/get-data`);
+      const response = await fetch(`https://fog-task1-backend.onrender.com/api/v1/get-data`);
       const data = await response.json();
 
       const grouped = data.reduce(

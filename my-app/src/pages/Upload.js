@@ -29,7 +29,7 @@ const Upload = () => {
   
   const deleteProduct = async (id) => {
     try {
-      const response = await fetch(`http://localhost:3000/api/v1/delete/${id}`, {
+      const response = await fetch(`https://fog-task1-backend.onrender.com/api/v1/delete/${id}`, {
         method: "DELETE",
       });
 
@@ -48,7 +48,7 @@ const Upload = () => {
   };
 
   const fetchAllProduct = () => {
-    fetch(`http://localhost:3000/api/v1/get-data`)
+    fetch(`https://fog-task1-backend.onrender.com/api/v1/get-data`)
       .then((response) => {
         return response.json();
       })
@@ -60,7 +60,7 @@ const Upload = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const dataResponse = await fetch(`http://localhost:3000/api/v1/add-data`, {
+    const dataResponse = await fetch(`https://fog-task1-backend.onrender.com/api/v1/add-data`, {
       method: "post",
       headers: {
         "content-type": "application/json",
