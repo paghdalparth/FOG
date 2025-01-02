@@ -31,7 +31,7 @@ const EditUpload = () => {
       const handleSubmit = async (e) => {
         e.preventDefault();
     
-        const dataResponse = await fetch(`http://localhost:3000/api/v1/update/${id}`, {
+        const dataResponse = await fetch(`https://fog-task1-backend.onrender.com/api/v1/update/${id}`, {
           method: "put",
           headers: {
             "content-type": "application/json",
