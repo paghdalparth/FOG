@@ -20,7 +20,7 @@ const Home = () => {
 
   const getData = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/api/v1/get-data`);
+      const response = await fetch(`https://fog-task1-backend.onrender.com/api/v1/get-data`);
       const data = await response.json();
 
       const grouped = data.reduce(
