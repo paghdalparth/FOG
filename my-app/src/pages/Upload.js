@@ -29,7 +29,7 @@ const Upload = () => {
   
   const deleteProduct = async (id) => {
     try {
-      const response = await fetch(`http://localhost:3000/api/v1/delete/${id}`, {
+      const response = await fetch(`https://fog-task1-backend.onrender.com/api/v1/delete/${id}`, {
         method: "DELETE",
       });
 
